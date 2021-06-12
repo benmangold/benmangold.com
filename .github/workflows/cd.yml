@@ -9,10 +9,6 @@ jobs:
   cd:
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - uses: actions/checkout@v2
       - name: Setup node 14
         uses: actions/setup-node@v2
@@ -24,4 +20,7 @@ jobs:
         with:
           terraform_version: 0.15.5
       - run: terraform init
+          env:
+            AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+            AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - run: npm run deploy
