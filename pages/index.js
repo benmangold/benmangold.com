@@ -13,36 +13,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Head>
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to benmangold.com
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <main className={styles.main}>
+          <h1 className={styles.title}>
+            Welcome to benmangold.com
         </h1>
-        
-        <p className={styles.description}>
-          A continuously-deployed place for{' '}
-          <code className={styles.code}>writing</code>
-          {' , '}
-          <code className={styles.code}>engineering</code>
-          {' and '}
-          <code className={styles.code}>audio</code>
-        </p>
 
-        <div className={styles.grid}>
-          <a href="/pageOne" className={styles.card}>
-            <h2>Page One &rarr;</h2>
-            <p>Look at page one.</p>
-          </a>
-        </div>
+          <p className={styles.description}>
+            A continuously-deployed place for{' '}
+            <code className={styles.code}>writing</code>
+            {' , '}
+            <code className={styles.code}>engineering</code>
+            {' and '}
+            <code className={styles.code}>audio</code>
+          </p>
 
-        
-        <div className={styles.grid}>
-          <a href="/pageTwo" className={styles.card}>
-            <h2>Page Two &rarr;</h2>
-            <p>Look at page two. test</p>
-          </a>
-        </div>
-      </main>
+          <div className={styles.grid}>
+            <a href="/pageOne" className={styles.card}>
+              <h2>Page One &rarr;</h2>
+              <p>Look at page one.</p>
+            </a>
+          </div>
+
+
+          <div className={styles.grid}>
+            <a href="/pageTwo" className={styles.card}>
+              <h2>Page Two &rarr;</h2>
+              <p>Look at page two. test</p>
+            </a>
+          </div>
+        </main>
       </Head>
 
 
