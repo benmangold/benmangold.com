@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "tf-next": "tf-next build",
-    "deploy": "npm run tf-next; terraform apply"
+    "deploy": "npm run tf-next; terraform apply -auto-approve"
   },
   "dependencies": {
     "axios": "^0.21.1",
