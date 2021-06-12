@@ -5,11 +5,16 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "tf-next": "tf-next build"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "next": "10.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "tf-next": "^0.7.0"
   }
 }
