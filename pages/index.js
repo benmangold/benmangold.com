@@ -20,7 +20,7 @@ export default function Home() {
         </h1>
         
         <p className={styles.description}>
-          A place for{' '}
+          A continuously-deployed place for{' '}
           <code className={styles.code}>writing</code>
           {' , '}
           <code className={styles.code}>engineering</code>
