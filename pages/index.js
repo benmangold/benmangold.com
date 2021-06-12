@@ -1,63 +1,47 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
 
+import Card from "../components/Card";
 
+import Footer from "../components/Footer";
+
+import Meta from "../components/Meta";
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Meta />
       <Head>
-        <title>Create Next App</title>
-        <meta name="description" content="benmangold.com" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=.8, shrink-to-fit=no"
+        />
         <main className={styles.main}>
-          <h1 className={styles.title}>
-            Welcome to benmangold.com
-        </h1>
+          <h1 className={styles.title}>benmangold.com</h1>
 
           <p className={styles.description}>
-            A continuously-deployed place for{' '}
-            <code className={styles.code}>writing</code>
-            {' , '}
+            A website for <code className={styles.code}>writing</code>
+            {" , "}
             <code className={styles.code}>engineering</code>
-            {' and '}
+            {" and "}
             <code className={styles.code}>audio</code>
           </p>
-
           <div className={styles.grid}>
-            <a href="/pageOne" className={styles.card}>
-              <h2>Page One &rarr;</h2>
-              <p>Look at page one.</p>
-            </a>
-          </div>
-
-
-          <div className={styles.grid}>
-            <a href="/pageTwo" className={styles.card}>
-              <h2>Page Two &rarr;</h2>
-              <p>Look at page two. test</p>
-            </a>
+            <Card
+              href="/pageOne"
+              header="Page One &rarr;"
+              text="Just a test page. Not a lot going on here."
+            />
+            <Card
+              href="/pageTwo"
+              header="Page Two"
+              text="check check one two hey hey one two hey hey."
+            />
           </div>
         </main>
       </Head>
 
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      <Footer />
     </div>
-  )
+  );
 }

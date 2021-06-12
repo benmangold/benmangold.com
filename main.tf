@@ -3,14 +3,14 @@
 # https://github.com/dealmore/terraform-aws-next-js/blob/main/examples/custom-domain/main.tf
 
 terraform {
-    backend "s3" {
-        bucket = "benmangold-tf-state-bucket"
-        key = "globals/s3/terraform.tfstate"
-        region = "us-east-2"
+  backend "s3" {
+    bucket = "benmangold-tf-state-bucket"
+    key    = "globals/s3/terraform.tfstate"
+    region = "us-east-2"
 
-        dynamodb_table = "benmangold-tf-state-lock-table"
-        encrypt= "true"
-    }
+    dynamodb_table = "benmangold-tf-state-lock-table"
+    encrypt        = "true"
+  }
 }
 
 terraform {
