@@ -6,6 +6,6 @@
 
 - [x] update dealmore/nextjs to v0.9.0
 
-- [ ] dummy markdown blog page
+- [x] dummy markdown blog page - pulled from next.js examples
 
 - [ ] cache dependencies in cd.yml
