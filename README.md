@@ -8,4 +8,4 @@
 
 - [x] dummy markdown blog page - pulled from next.js examples
 
-- [ ] cache dependencies in cd.yml
+- [ ] clean up 
