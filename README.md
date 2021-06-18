@@ -1,5 +1,11 @@
 # benmangold.com
 
+Next.js on AWS
+
+dealmore/nextjs Terraform module
+
+Continuously deployed via GitHub Actions workflow
+
 ## todo
 
 - [x] update cd.yml to terraform 1.0.0
