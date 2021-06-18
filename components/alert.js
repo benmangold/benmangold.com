@@ -24,12 +24,12 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              The source code for this blog is{' '}
+              This blog is{' '}
               <a
                 href={`https://github.com/benmangold/benmangold.com`}
                 className="underline hover:text-success duration-200 transition-colors"
               >
-                available on GitHub
+                continuously deployed from GitHub
               </a>
               .
             </>
