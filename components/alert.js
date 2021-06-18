@@ -24,7 +24,7 @@ export default function Alert({ preview }) {
             </>
           ) : (
             <>
-              This blog is{' '}
+              This website is{' '}
               <a
                 href={`https://github.com/benmangold/benmangold.com`}
                 className="underline hover:text-success duration-200 transition-colors"
