@@ -5,7 +5,7 @@ coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2020-03-16T05:35:07.322Z'
 author:
   name: Ben Mangold
-  picture: '/assets/blog/authors/benmangold.png'
+  picture: '/assets/blog/authors/benmangold.jpeg'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
