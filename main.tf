@@ -66,6 +66,7 @@ module "cloudfront_cert" {
 
 module "tf_next" {
   source = "dealmore/next-js/aws"
+  version = "v0.8.1"
 
   deployment_name = "terraform-next-js-example-custom-domain"
 
