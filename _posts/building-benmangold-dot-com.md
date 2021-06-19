@@ -1,5 +1,5 @@
 ---
-title: "Building This Blog"
+title: "Building This Blog [draft]"
 excerpt: "Building and continuously deploying this website on AWS with Next.js, Terraform and GitHub Actions."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2021-06-19T17:19:16.886Z"
@@ -8,7 +8,7 @@ author:
   picture: "/assets/blog/authors/benmangold.jpeg"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
-tags: next.js github-actions terraform aws lambda
+tags: next.js github-actions terraform aws lambda blog-build
 ---
 
 Maintaining a personal blog is one of those projects I've attempted again and again in my decade or so or programming.
