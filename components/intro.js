@@ -8,5 +8,5 @@ export default function Intro() {
         A blog about nothing in particular
       </h4>
     </section>
-  )
+  );
 }

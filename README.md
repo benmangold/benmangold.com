@@ -14,4 +14,4 @@ Continuously deployed via GitHub Actions workflow
 
 - [x] dummy markdown blog page - pulled from next.js examples
 
-- [ ] clean up 
+- [ ] clean up
