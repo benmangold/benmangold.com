@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "tf-next": "tf-next build",
-    "deploy": "npm run tf-next; terraform apply -auto-approve"
+    "deploy": "npm run tf-next; terraform apply -auto-approve",
+    "prepare": "husky install",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "husky": "^6.0.0",
+    "jest": "^27.0.4",
     "postcss": "^8.3.5",
     "tailwindcss": "^2.2.2",
     "tf-next": "^0.7.0"
