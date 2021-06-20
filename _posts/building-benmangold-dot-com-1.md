@@ -23,7 +23,7 @@ This inaugural blog post details the decisions behind the website you see before
 
 In the past I've built and deployed static websites for projects and to host a simple resume page here at benmangold.com.
 
-My go-to approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a manually-configured, public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS. The domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).
+My go-to approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a manually-configured, public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).
 
 The most critical downside of my initial approach was a lack of automation. Manual configuration and deployment is a long-term untenable tech debt. After all, the real work of the project is the _writing_, isn't it?
 
@@ -52,8 +52,6 @@ b. Manual deployments via uploading assets to S3 in the AWS console.
 c. Domain hosted from public-facing S3 bucket instead of a CDN.
 
 d. No meaningful content management.
-
-e. No easy way to build out a back-end.
 
 ## The New Approach
 
