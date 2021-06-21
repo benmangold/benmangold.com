@@ -1,7 +1,7 @@
 ---
 title: "Building This Blog - Part 2 [draft]"
 excerpt: "Building and continuously deploying this website on AWS with Next.js, Terraform and GitHub Actions."
-coverImage: "/assets/blog/dynamic-routing/cover.jpg"
+coverImage: "/assets/blog/hello-world/cover.jpg"
 date: "2021-06-19T19:19:16.886Z"
 author:
   name: Ben Mangold
