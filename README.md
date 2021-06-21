@@ -8,6 +8,6 @@ Continuously deployed via GitHub Actions workflow
 
 ## todo
 
-- [x] precommit linting, prettier and markdownlint
+- [ ] topic label display
 
 - [ ] blog on building this site
