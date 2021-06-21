@@ -11,12 +11,12 @@ export default function TagList({ tags }) {
 function Tag({ tag }) {
   return (
     <div>
-      <button
-        class="bg-gray-100 hover:bg-gray-300 py-1 px-2 rounded"
+      <span
+        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
         style={{ outline: "none", border: "0" }}
       >
         {tag}
-      </button>
+      </span>
     </div>
   );
 }
