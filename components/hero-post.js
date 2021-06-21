@@ -3,6 +3,8 @@ import DateFormatter from "../components/date-formatter";
 import CoverImage from "../components/cover-image";
 import Link from "next/link";
 
+import TagList from "../components/tag-list";
+
 export default function HeroPost({
   title,
   coverImage,
@@ -10,7 +12,7 @@ export default function HeroPost({
   excerpt,
   author,
   slug,
-  tags
+  tags,
 }) {
   return (
     <section>
@@ -32,7 +34,8 @@ export default function HeroPost({
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
-            <div>{`${tags}`}</div>
+            {/* <div>{`${tags}`}</div> */}
+            <TagList tags={tags} />
           </div>
         </div>
         <div>

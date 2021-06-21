@@ -3,6 +3,8 @@ import DateFormatter from "../components/date-formatter";
 import CoverImage from "./cover-image";
 import Link from "next/link";
 
+import TagList from '../components/tag-list'
+
 export default function PostPreview({
   title,
   coverImage,
@@ -10,7 +12,7 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
-  tags
+  tags,
 }) {
   return (
     <div>
@@ -31,9 +33,7 @@ export default function PostPreview({
       <div className="text-lg mb-4">
         <DateFormatter dateString={date} />
       </div>
-      <div className="text-lg mb-4">
-        {`${tags}`}
-      </div>
+      <div className="text-lg mb-4"><TagList tags={tags}/></div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
