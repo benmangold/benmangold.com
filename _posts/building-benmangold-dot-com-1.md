@@ -1,6 +1,6 @@
 ---
 title: "Building This Blog - Part 1 [draft]"
-excerpt: "Building and continuously deploying this website on AWS with Next.js, Terraform and GitHub Actions."
+excerpt: "Building this website."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2021-06-19T17:19:16.886Z"
 author:

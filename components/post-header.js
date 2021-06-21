@@ -3,7 +3,7 @@ import DateFormatter from "../components/date-formatter";
 import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
 
-import TagList from "../components/tag-list"
+import TagList from "../components/tag-list";
 
 export default function PostHeader({ title, coverImage, date, author, tags }) {
   return (
@@ -15,7 +15,7 @@ export default function PostHeader({ title, coverImage, date, author, tags }) {
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} height={620} width={1240} />
       </div>
-      <TagList tags={tags}/>
+      <TagList tags={tags} />
       <div className="max-w-2xl mx-auto">
         <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />
