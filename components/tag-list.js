@@ -9,7 +9,11 @@ export default function TagList({ tags }) {
 }
 
 function Tag({ tag }) {
-  return <div>
-        <button class="hover:underline" style={{outline:"none", border: "0"}}>{tag}</button> 
-      </div>
+  return (
+    <div>
+      <button class="bg-gray-100 hover:bg-gray-300 py-1 px-2 rounded" style={{ outline: "none", border: "0" }}>
+        {tag}
+      </button>
+    </div>
+  );
 }
