@@ -1,6 +1,6 @@
 ---
 title: "Building This Blog - Part 2 [draft]"
-excerpt: "Building this website."
+excerpt: "Building this website 2/2."
 coverImage: "/assets/blog/hello-world/cover.jpg"
 date: "2021-06-19T19:19:16.886Z"
 author:
