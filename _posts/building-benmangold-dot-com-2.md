@@ -7,7 +7,7 @@ author:
   name: Ben Mangold
   picture: "/assets/blog/authors/benmangold.jpeg"
 ogImage:
-  url: "/assets/blog/dynamic-routing/cover.jpg"
+  url: "/assets/blog/hello-world/cover.jpg"
 tags: next.js github-actions terraform aws lambda blog-build
 ---
 
