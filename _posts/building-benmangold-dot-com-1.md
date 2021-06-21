@@ -55,11 +55,11 @@ d. No meaningful content management.
 
 ## The New Approach
 
-For the last couple years I've worked as a DevOps Engineer and that's radically changed my thought process around building this personal blog and equipped me to solve the lack of automation I fell into on previous attempts.
+For the last couple years I've worked as a DevOps Engineer and that experience has equipped me to build the blog of my dreams.
 
-The high-level solutions to the lack of automation was implementing Infrastructure-as-Code and Continuous Deployment to reduce friction managing infrastructure and updating the production site.
+The high-level solutions to the automation problems was implementing Infrastructure-as-Code and Continuous Deployment.
 
-More than my previous resume page, I want this site to be a stronger testament to my technical skills. For me this means planning for full-stack capabilities beyond a solely static website. Even if it's done on a lark, I don't want to struggle to get some server routes and a database wired up in the future.
+These practices and technologies reduce the friction of managing infrastructure and updating the production site.
 
 ### Initial Requirements
 
