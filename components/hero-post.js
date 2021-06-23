@@ -34,7 +34,6 @@ export default function HeroPost({
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
-            {/* <div>{`${tags}`}</div> */}
             <TagList tags={tags} />
           </div>
         </div>
