@@ -7,8 +7,6 @@ import Head from "next/head";
 import Blog from "../components/blog";
 
 export default function Index({ allPosts }) {
-  const heroPost = allPosts[0];
-  const morePosts = allPosts.slice(1);
   return (
     <>
       <Layout>
