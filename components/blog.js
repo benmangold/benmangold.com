@@ -5,7 +5,7 @@ export default function Blog({ allPosts }) {
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
   return (
-    <span>
+    <>
       {" "}
       {heroPost && (
         <HeroPost
@@ -19,7 +19,6 @@ export default function Blog({ allPosts }) {
         />
       )}
       {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-    </span>
+    </>
   );
 }
-
