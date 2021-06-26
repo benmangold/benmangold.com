@@ -26,10 +26,18 @@ function Tag({ tag, selectedTags, setSelectedTags }) {
           }
         }}
       >
-        {tag + ' '}
-        {selectedTags.includes(tag) ? <button onClick={event => { event.stopPropagation(); setSelectedTags([]) }}>x</button> : null}
+        {tag + " "}
+        {selectedTags.includes(tag) ? (
+          <button
+            onClick={(event) => {
+              event.stopPropagation();
+              setSelectedTags([]);
+            }}
+          >
+            x
+          </button>
+        ) : null}
       </span>
     </>
-
   );
 }
