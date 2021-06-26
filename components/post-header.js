@@ -15,7 +15,7 @@ export default function PostHeader({ title, coverImage, date, author, tags }) {
       <div className="mb-8 md:mb-16 sm:mx-0">
         <CoverImage title={title} src={coverImage} height={620} width={1240} />
       </div>
-      <TagList tags={tags} />
+      {/* <TagList tags={tags} /> */}
       <div className="max-w-2xl mx-auto">
         <div className="block md:hidden mb-6">
           <Avatar name={author.name} picture={author.picture} />

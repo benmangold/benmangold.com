@@ -13,6 +13,8 @@ export default function HeroPost({
   author,
   slug,
   tags,
+  selectedTags,
+  setSelectedTags
 }) {
   return (
     <section>
@@ -34,7 +36,7 @@ export default function HeroPost({
           </h3>
           <div className="mb-4 md:mb-0 text-lg">
             <DateFormatter dateString={date} />
-            <TagList tags={tags} />
+            <TagList tags={tags} selectedTags={selectedTags} setSelectedTags={setSelectedTags} />
           </div>
         </div>
         <div>

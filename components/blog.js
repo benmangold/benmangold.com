@@ -3,14 +3,35 @@ import HeroPost from "../components/hero-post";
 import React, { useState } from "react";
 
 export default function Blog({ allPosts }) {
-  const [selectedTag, setSelectedTag] = useState([]);
+  const [selectedTags, setSelectedTags] = useState([]);
+
+  allPosts = allPosts.filter(post => {
+    if (selectedTags.length == 0) {
+      return true
+    }
+    else {
+      const postTags = post.tags.split(' ')
+      const displayTags = selectedTags.map(selectedTag => {
+        if (postTags.includes(selectedTag)) {
+          return selectedTag
+        }
+        else {
+          return null
+        }
+      })
+      if (displayTags.filter((el) => el != null).length > 0) {
+        return true
+      }
+      else return false
+    }
+  })
 
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
 
   return (
     <>
-      {" "}
+      {selectedTags}
       {heroPost && (
         <HeroPost
           title={heroPost.title}
@@ -20,15 +41,15 @@ export default function Blog({ allPosts }) {
           slug={heroPost.slug}
           excerpt={heroPost.excerpt}
           tags={heroPost.tags}
-          selectedTags={selectedTag}
-          setSelectedTags={setSelectedTag}
+          selectedTags={selectedTags}
+          setSelectedTags={setSelectedTags}
         />
       )}
       {morePosts.length > 0 && (
         <MoreStories
           posts={morePosts}
-          selectedTags={selectedTag}
-          setSelectedTags={setSelectedTag}
+          selectedTags={selectedTags}
+          setSelectedTags={setSelectedTags}
         />
       )}
     </>

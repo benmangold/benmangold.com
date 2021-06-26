@@ -13,6 +13,10 @@ tags: next.js github-actions terraform aws lambda blog-build
 
 ## Finding the Path
 
-### Infrastructure-as-Code
+With the blog standing on its own we get to some feature development.
 
-### Continuous Deployment
+I want to be able to select a tag to filter out a certain topic, then be able to cancel that selection.
+
+- add onClick to topic list entry, updates state for selected topic.
+
+- if topic list entry's topic is selected, render an 'x' which clears state when clicked.

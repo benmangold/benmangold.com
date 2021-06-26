@@ -11,3 +11,7 @@ Continuously deployed via GitHub Actions workflow
 - [ ] topic label display
 
 - [ ] blog on building this site
+
+- [ ] topic selection
+
+- [ ] hidden drafts
