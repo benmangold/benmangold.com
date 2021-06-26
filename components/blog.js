@@ -28,7 +28,6 @@ export default function Blog({ allPosts }) {
 
   return (
     <>
-      {selectedTags}
       {heroPost && (
         <HeroPost
           title={heroPost.title}
