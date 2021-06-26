@@ -5,26 +5,23 @@ import React, { useState } from "react";
 export default function Blog({ allPosts }) {
   const [selectedTags, setSelectedTags] = useState([]);
 
-  allPosts = allPosts.filter(post => {
+  allPosts = allPosts.filter((post) => {
     if (selectedTags.length == 0) {
-      return true
-    }
-    else {
-      const postTags = post.tags.split(' ')
-      const displayTags = selectedTags.map(selectedTag => {
+      return true;
+    } else {
+      const postTags = post.tags.split(" ");
+      const displayTags = selectedTags.map((selectedTag) => {
         if (postTags.includes(selectedTag)) {
-          return selectedTag
+          return selectedTag;
+        } else {
+          return null;
         }
-        else {
-          return null
-        }
-      })
+      });
       if (displayTags.filter((el) => el != null).length > 0) {
-        return true
-      }
-      else return false
+        return true;
+      } else return false;
     }
-  })
+  });
 
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);

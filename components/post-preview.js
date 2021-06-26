@@ -38,7 +38,11 @@ export default function PostPreview({
         <DateFormatter dateString={date} />
       </div>
       <div className="text-lg mb-4">
-        <TagList tags={tags} selectedTags={selectedTags} setSelectedTags={setSelectedTags} />
+        <TagList
+          tags={tags}
+          selectedTags={selectedTags}
+          setSelectedTags={setSelectedTags}
+        />
       </div>
       <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
       <Avatar name={author.name} picture={author.picture} />
