@@ -1,6 +1,6 @@
 ---
-title: "Building This Blog - Part 1 [draft]"
-excerpt: "Building this website 1/2."
+title: "Building This Blog"
+excerpt: "Building this website."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2021-06-19T17:19:16.886Z"
 author:
@@ -25,7 +25,7 @@ In the past I've built and deployed static websites for projects and to host a s
 
 My go-to approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a manually-configured, public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).
 
-Gatsby allows me to write a React app with lots of syntactic sugar, and easily compile down efficient static assets for production.  Those get uploaded to S3 and are thus made available to the world.
+Gatsby allows me to write a React app with lots of syntactic sugar, and easily compile down efficient static assets for production. Those get uploaded to S3 and are thus made available to the world.
 
 The most critical downside of my initial approach was a lack of automation. Manual configuration and deployment is a long-term untenable tech debt. After all, the real work of the project is the _writing_, isn't it?
 
