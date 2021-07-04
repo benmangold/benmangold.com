@@ -8,10 +8,12 @@ Continuously deployed via GitHub Actions workflow
 
 ## todo
 
-- [ ] topic label display
+- [ ] landing page with separate blog home
+
+- [x] topic label display
 
 - [ ] blog on building this site
 
-- [ ] topic selection
+- [x] topic selection
 
-- [ ] hidden drafts
+- [x] hidden drafts
