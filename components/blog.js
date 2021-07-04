@@ -11,7 +11,6 @@ export default function Blog({ allPosts }) {
     } else {
       const postTags = post.tags.split(" ");
       const displayTags = selectedTags.map((selectedTag) => {
-
         if (postTags.includes(selectedTag)) {
           return selectedTag;
         } else {
@@ -24,12 +23,11 @@ export default function Blog({ allPosts }) {
     }
   });
 
-  allPosts = allPosts.filter(post => {
-    const postTags = post.tags.split(" ")
-    console.log(postTags)
-    if (postTags.includes('hidden')) return false
-    else return true
-  })
+  allPosts = allPosts.filter((post) => {
+    const postTags = post.tags.split(" ");
+    if (postTags.includes("hidden")) return false;
+    else return true;
+  });
 
   const heroPost = allPosts[0];
   const morePosts = allPosts.slice(1);
