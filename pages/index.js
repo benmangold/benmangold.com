@@ -1,10 +1,10 @@
 import Container from "../components/container";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
-import { getAllPosts } from "../lib/api";
 import Head from "next/head";
-
 import Blog from "../components/blog";
+import { getAllPosts } from "../lib/api";
+
 
 export default function Index({ allPosts }) {
   return (
@@ -14,8 +14,9 @@ export default function Index({ allPosts }) {
           <title>benmangold.com</title>
         </Head>
         <Container>
-          <Intro />
+          <Intro description="A personal website." />
           <Blog allPosts={allPosts} />
+
         </Container>
       </Layout>
     </>
