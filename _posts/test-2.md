@@ -8,5 +8,5 @@ author:
   picture: "/assets/blog/authors/benmangold.jpeg"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
-tags: test one
+tags: test one hidden
 ---

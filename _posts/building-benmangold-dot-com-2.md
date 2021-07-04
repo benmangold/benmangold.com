@@ -8,7 +8,7 @@ author:
   picture: "/assets/blog/authors/benmangold.jpeg"
 ogImage:
   url: "/assets/blog/hello-world/cover.jpg"
-tags: next.js github-actions terraform aws lambda blog-build
+tags: next.js github-actions terraform aws lambda blog-build hidden
 ---
 
 ## Finding the Path
