@@ -2,8 +2,6 @@ import Container from "../components/container";
 import Intro from "../components/intro";
 import Layout from "../components/layout";
 import Head from "next/head";
-import Blog from "../components/blog";
-import { getAllPosts } from "../lib/api";
 
 export default function Index({ allPosts }) {
   return (
@@ -13,25 +11,12 @@ export default function Index({ allPosts }) {
           <title>benmangold.com</title>
         </Head>
         <Container>
-          <Intro description="A personal website." />
-          <Blog allPosts={allPosts} />
+          <Intro />
+          <h2 className="text-2xl md:text-4xl font-bold tracking-tight md:tracking-tighter leading-tight mb-20 mt-8">
+            About Me - Empty for now
+          </h2>
         </Container>
       </Layout>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const allPosts = getAllPosts([
-    "title",
-    "date",
-    "slug",
-    "author",
-    "coverImage",
-    "excerpt",
-  ]);
-
-  return {
-    props: { allPosts },
-  };
 }
