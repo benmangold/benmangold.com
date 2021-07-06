@@ -105,7 +105,7 @@ module "cloudfront_cert" {
 ##########################
 
 module "tf_next" {
-  source = "dealmore/next-js/aws"
+  source = "github.com/benmmangold/terraform-aws-next-js"
   version = "v0.9.0"
 
   # Prevent creation of the main CloudFront distribution
