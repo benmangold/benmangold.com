@@ -1,6 +1,6 @@
 # benmangold.com
 
-Next.js on AWS
+Next.js Personal Blog on AWS
 
 dealmore/nextjs Terraform module
 
