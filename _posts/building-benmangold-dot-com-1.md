@@ -2,7 +2,7 @@
 title: "benmangold.com dev journal"
 excerpt: "A development journal for benmangold.com."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
-date: "2021-06-19T17:19:16.886Z"
+date: "2021-08-31T20:48:47.063Z"
 author:
   name: Ben Mangold
   picture: "/assets/blog/authors/benmangold.jpeg"
@@ -23,7 +23,7 @@ This blog post details the decisions and development behind benmangold.com.
 
 In the past I've built and deployed similar websites on AWS.
 
-My approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).  All of this was artisinally configured in the AWS console without any version control.  Shame, shame.
+My approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/). All of this was artisinally configured in the AWS console without any version control. Shame, shame.
 
 The most critical downside of my initial approach was a lack of automation. Manual configuration and deployment is a long-term untenable tech debt. After all, the real work of the project is the _writing_.
 
