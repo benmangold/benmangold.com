@@ -1,6 +1,6 @@
 ---
-title: "Building This Blog"
-excerpt: "Building this website."
+title: "benmangold.com dev journal"
+excerpt: "A development journal for benmangold.com."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2021-06-19T17:19:16.886Z"
 author:
@@ -8,26 +8,24 @@ author:
   picture: "/assets/blog/authors/benmangold.jpeg"
 ogImage:
   url: "/assets/blog/dynamic-routing/cover.jpg"
-tags: next.js github-actions terraform aws lambda blog-build
+tags: next.js github-actions terraform aws lambda blog
 ---
 
-Maintaining a personal blog is one of those projects I've attempted again and again in my decade or so or programming.
+Maintaining a personal blog is one of those projects I've attempted again and again.
 
-Each attempt starts with grand aspirations, only to find itself lost in the sauce of new technologies and frameworks.
+Each attempt starts with grand aspirations, but finds itself lost in the sauce of new technologies and frameworks.
 
 Not this time.
 
-This inaugural blog post details the decisions behind the website you see before you. But first, story time.
+This blog post details the decisions and development behind benmangold.com.
 
 ## Some Backstory
 
-In the past I've built and deployed static websites for projects and to host a simple resume page here at benmangold.com.
+In the past I've built and deployed similar websites on AWS.
 
-My go-to approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a manually-configured, public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).
+My approach for those sites was a static website written in [React](https://reactjs.org/) with [Gatsby](https://www.gatsbyjs.com/) deployed to a public-facing [S3](https://aws.amazon.com/s3/) Bucket on AWS, the domain name bought and DNS managed in AWS [Route53](https://aws.amazon.com/route53/).  All of this was artisinally configured in the AWS console without any version control.  Shame, shame.
 
-Gatsby allows me to write a React app with lots of syntactic sugar, and easily compile down efficient static assets for production. Those get uploaded to S3 and are thus made available to the world.
-
-The most critical downside of my initial approach was a lack of automation. Manual configuration and deployment is a long-term untenable tech debt. After all, the real work of the project is the _writing_, isn't it?
+The most critical downside of my initial approach was a lack of automation. Manual configuration and deployment is a long-term untenable tech debt. After all, the real work of the project is the _writing_.
 
 ### Previous benmangold.com Tech Stack
 
@@ -55,11 +53,11 @@ c. Domain hosted from public-facing S3 bucket instead of a CDN.
 
 d. No meaningful content management.
 
+e. No built-in back-end for implementing a full-stack feature.
+
 ## The New Approach
 
-For the last couple years I've worked as a DevOps Engineer and that experience has equipped me to build the blog of my dreams.
-
-The high-level solutions to the automation problems was implementing Infrastructure-as-Code and Continuous Deployment.
+The high-level solutions to my automation problems is implementing Infrastructure-as-Code and Continuous Deployment.
 
 These practices and technologies reduce the friction of managing infrastructure and updating the production site.
 
@@ -73,4 +71,8 @@ c. A batteries-included web framework with full-stack capabilities.
 
 d. Competitive performance with my previous sites.
 
-In part I'll write through how I came to addressed each of the requirements outlined above.
+### Moving Parts (GitHub Repos)
+
+[github.com/benmangold/benmangold.com](https://github.com/benmangold/benmangold.com) - Next.js application code and Terraform configuration.
+
+[github.com/benmangold/terraform-next-js](https://github.com/benmangold/terraform-aws-next-js) - Forked module of [dealmore/terraform-aws-next-js](https://github.com/dealmore/terraform-aws-next-js)
