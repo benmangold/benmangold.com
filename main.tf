@@ -105,7 +105,7 @@ module "cloudfront_cert" {
 ##########################
 
 module "tf_next" {
-  source = "git::https://github.com/benmangold/terraform-aws-next-js?ref=v0.9.1"
+  source = "git::https://github.com/benmangold/terraform-aws-next-js?ref=v0.9.0"
 
   # Prevent creation of the main CloudFront distribution
   cloudfront_create_distribution = false
