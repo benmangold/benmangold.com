@@ -105,7 +105,7 @@ module "cloudfront_cert" {
 ##########################
 
 module "tf_next" {
-  source = "git::https://github.com/benmangold/terraform-aws-next-js?ref=v0.9.0"
+  source = "git::https://github.com/benmangold/terraform-aws-next-js?ref=v0.9.1"
 
   # Prevent creation of the main CloudFront distribution
   cloudfront_create_distribution = false
@@ -130,7 +130,7 @@ resource "aws_cloudfront_distribution" "distribution" {
   is_ipv6_enabled     = true
   comment             = "terraform-next-js-example-custom-domain"
   aliases             = [var.custom_domain]
-  default_root_object = module.tf_next.cloudfront_default_root_object
+  default_root_object = "index"
 
   # Default cache behavior
   ########################
