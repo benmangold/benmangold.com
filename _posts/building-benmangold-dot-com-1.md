@@ -1,5 +1,5 @@
 ---
-title: "benmangold.com dev journal"
+title: "blog dev journal"
 excerpt: "A development journal for benmangold.com."
 coverImage: "/assets/blog/dynamic-routing/cover.jpg"
 date: "2021-08-31T20:48:47.063Z"
