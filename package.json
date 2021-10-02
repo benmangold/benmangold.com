@@ -8,6 +8,7 @@
     "start": "next start",
     "tf-next": "tf-next build",
     "deploy": "npm run tf-next; terraform apply -auto-approve",
+    "plan": "npm run tf-next; terraform plan",
     "prepare": "husky install",
     "test": "jest",
     "markdownlint": "markdownlint '**/*.md' --ignore node_modules --config .markdownlint.yml -f",
